@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="form-container">
+      <h1>Envoyer une transaction de cryptomonnaie</h1>
+      <div class="form-content">
+          <div class="form-field">
+              <label>Adresse d'envoi :</label>
+              <input type="text" [(ngModel)]="transaction.fromAddress" placeholder="Adresse d'envoi">
+          </div>
+          <div class="form-field">
+              <label>Adresse de réception :</label>
+              <input type="text" [(ngModel)]="transaction.toAddress" placeholder="Adresse de réception">
+          </div>
+          <div class="form-field">
+              <label>Montant (ETH) :</label>
+              <input type="number" [(ngModel)]="transaction.amount" placeholder="Montant (ETH)">
+          </div>
+          <div class="form-button">
+              <button (click)="onSubmit()">Envoyer la transaction</button>
+          </div>
+      </div>
+  </div>
+</div>

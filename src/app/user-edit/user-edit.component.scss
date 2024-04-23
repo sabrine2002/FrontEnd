@@ -1,0 +1,61 @@
+.user-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px;
+    border: 1px solid #4681e8;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #247de9;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .user-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4b4848;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="email"],
+  .user-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #4681e8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .user-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .user-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #f00;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

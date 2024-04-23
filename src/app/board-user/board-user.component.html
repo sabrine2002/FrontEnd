@@ -1,0 +1,37 @@
+<header class="bg-surface-primary border-bottom pt-6">
+  <div class="container-fluid">
+    <div class="mb-npx">
+      <div class="row align-items-center">
+        <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+          <!-- Title -->
+          <h1 class="h2 mb-0 ls-tight">Hello User</h1>
+        </div>
+        <!-- Actions -->
+        <div class="transactions-list">
+            <h2>Transactions List</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>From Address</th>
+                  <th>To Address</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let transaction of transactions">
+                  <td>{{ transaction.id }}</td>
+                  <td>{{ transaction.fromAddress }}</td>
+                  <td>{{ transaction.toAddress }}</td>
+                  <td>{{ transaction.amount }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        <!-- Nav -->
+      </div>
+    </div>
+  </div>
+</header>
+<app-footer></app-footer>

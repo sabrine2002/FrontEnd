@@ -1,0 +1,35 @@
+<div class="profile-container"  *ngIf="currentUser; let user of users;else loggedOut">
+    <header class="profile-header" >
+      <h3>
+        <strong>{{ currentUser.username }}</strong>'s Profile
+      </h3>
+    </header>
+    <div class="profile-details">
+      <p>
+        <strong>Email:</strong>
+        {{ currentUser.email }}
+      </p>
+      <div class="roles-container">
+        <strong>Roles:</strong>
+        <ul class="roles-list">
+          <li *ngFor="let role of currentUser.roles" class="role-item">
+            {{ role }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+    href="#"
+    class="btn btn-sm btn-neutral"
+    (click)="navigateToUpdateUser(user.id)"
+  >
+    Update
+  </button>
+  </div>
+  
+  <ng-template #loggedOut>
+    <div class="login-message">
+      Please log in to view your profile.
+    </div>
+  </ng-template>
+  

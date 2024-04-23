@@ -1,0 +1,12 @@
+<div class="messages-list">
+    <div *ngFor="let message of contactMessages" class="message">
+        <h3>Message N°{{ message.id }}</h3>
+      <p><strong>Name:</strong> {{ message.name }}</p>
+      <p><strong>Email:</strong> {{ message.email }}</p>
+      <p><strong>Phone:</strong> {{ message.phone }}</p>
+      <p><strong>Date:</strong> {{ message.createdAt}}</p>
+      <p><strong>Message:</strong> {{ message.message }}</p>
+      <hr>
+    </div>
+  </div>
+  

@@ -1,0 +1,9 @@
+<div>
+    <input type="file" (change)="onFileSelected($event)" accept=".sol">
+    <button (click)="verifyContract()">Verify Contract</button>
+  </div>
+  
+  <div *ngIf="verificationResult">
+    <p>{{ verificationResult }}</p>
+  </div>
+  

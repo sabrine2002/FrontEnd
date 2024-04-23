@@ -1,0 +1,49 @@
+<div class="card shadow border-0 mb-7">
+    <div class="card-header">
+        <h5 class="mb-0">List of users</h5>
+    </div>
+    <div class="table-responsive" *ngIf="users.length > 0; else noUsers" >
+        <table class="table table-hover table-nowrap">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                      <button href="#" class="btn btn-sm btn-neutral" (click)="navigateToUpdateUser(user.id)">Update</button>
+                      <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover" (click)="deleteUser(user.id, user.username)"><i class="bi bi-trash"></i></button>
+                      
+                    </td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>
+    <ng-template #noUsers>
+        <p class="no-users-message">No users available</p>
+      </ng-template>
+      
+      
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+      <br>
+      <br>
+      <br>
+      <div class="card-header">
+        
+        <h5 class="mb-0 " >Create New User    <button  href="#" class="btn btn-sm btn-neutral" (click)="navigateToCreateUser()">Create User</button>
+        </h5>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="create-user-button">
+      </div>

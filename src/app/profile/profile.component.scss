@@ -1,0 +1,73 @@
+.profile-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.246);
+    margin-bottom: 2rem;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2983cd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .profile-details {
+    margin-bottom: 2rem;
+  }
+  
+  .profile-details p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .roles-container {
+    margin-bottom: 0.5rem;
+  }
+  
+  .roles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .role-item {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #30303162;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-neutral {
+    background-color: #2e69e9;
+    color: #131212;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-neutral:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .login-message {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+  }
+  
